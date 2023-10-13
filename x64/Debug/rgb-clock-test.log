@@ -1,8 +1,8 @@
 ﻿  rgb-clock-test.cpp
-D:\Gavi\KULIAH.exe\Semester 3\Kelas Grafkom\UTS\rgb-clock-test.cpp(10,29): warning C4305: 'initializing': truncation from 'double' to 'float'
-D:\Gavi\KULIAH.exe\Semester 3\Kelas Grafkom\UTS\rgb-clock-test.cpp(11,27): warning C4305: 'initializing': truncation from 'double' to 'float'
-D:\Gavi\KULIAH.exe\Semester 3\Kelas Grafkom\UTS\rgb-clock-test.cpp(97,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\ACER\Documents\USU\Semester3\glfw-ground\first\rgb-clock-test\rgb-clock-test.cpp(10,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\ACER\Documents\USU\Semester3\glfw-ground\first\rgb-clock-test\rgb-clock-test.cpp(11,27): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\ACER\Documents\USU\Semester3\glfw-ground\first\rgb-clock-test\rgb-clock-test.cpp(97,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 glew32s.lib(glew.obj) : warning LNK4099: PDB '' was not found with 'glew32s.lib(glew.obj)' or at ''; linking object as if no debug info
 LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
 LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
-  rgb-clock-test.vcxproj -> D:\Gavi\KULIAH.exe\Semester 3\Kelas Grafkom\UTS\x64\Debug\rgb-clock-test.exe
+  rgb-clock-test.vcxproj -> C:\Users\ACER\Documents\USU\Semester3\glfw-ground\first\rgb-clock-test\x64\Debug\rgb-clock-test.exe

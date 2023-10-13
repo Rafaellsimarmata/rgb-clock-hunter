@@ -143,7 +143,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include=".gitignore" />
-    <Text Include="Tesssssxt.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
