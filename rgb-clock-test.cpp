@@ -20,8 +20,7 @@ float deltaTime = 0.0f;
 
 float speed = 1;
 
-int main(void)
-{
+int main(void){
 	GLFWwindow* window;
 
 	/* Initialize the library */
