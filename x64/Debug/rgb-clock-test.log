@@ -1,5 +1,0 @@
-﻿  rgb-clock-test.cpp
-C:\Users\ACER\Documents\USU\Semester3\glfw-ground\first\rgb-clock-test\rgb-clock-test.cpp(10,29): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\ACER\Documents\USU\Semester3\glfw-ground\first\rgb-clock-test\rgb-clock-test.cpp(11,27): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\ACER\Documents\USU\Semester3\glfw-ground\first\rgb-clock-test\rgb-clock-test.cpp(99,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  rgb-clock-test.vcxproj -> C:\Users\ACER\Documents\USU\Semester3\glfw-ground\first\rgb-clock-test\x64\Debug\rgb-clock-test.exe
