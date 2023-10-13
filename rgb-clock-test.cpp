@@ -6,6 +6,18 @@ using namespace std;
 
 unsigned int program;
 
+float velocitySecondPointer = -6;
+float velocityMinutePointer = -0.1;
+float velocityHourPointer = -0.00417;
+
+float currentSecondPointer = 270.0f;
+float currentMinutePointer = 270.0f;
+float currentHourPointer = 270.0f;
+
+float lastTime = 0.0f;
+float currentTime = 0.0f;
+float deltaTime = 0.0f;
+
 int main(void)
 {
 	GLFWwindow* window;
@@ -74,11 +86,29 @@ int main(void)
 	glAttachShader(program, vertexShader);
 	glAttachShader(program, fragmentShader);
 	glLinkProgram(program);
-	
+
+	GLint currentSecondPointerLoc = glGetUniformLocation(program, "currentSecondPointer");
+	GLint currentMinutePointerLoc = glGetUniformLocation(program, "currentMinutePointer");
+	GLint currentHourPointerLoc = glGetUniformLocation(program, "currentHourPointer");
 	
 	/* Loop until the user closes the window */
 	while (!glfwWindowShouldClose(window))
 	{
+		currentTime = glfwGetTime();
+		deltaTime = 1 * (currentTime - lastTime);
+		lastTime = currentTime;
+
+		currentSecondPointer += deltaTime * velocitySecondPointer;
+		currentMinutePointer += deltaTime * velocityMinutePointer;
+		currentHourPointer += deltaTime * velocityHourPointer;
+
+		cout <<" currentSecondPointer" << currentSecondPointer << endl;
+		cout <<" currentMinutePointer" << currentMinutePointer << endl;
+		cout <<" currentHourPointer" << currentHourPointer << endl;
+
+		glUniform1f(currentSecondPointerLoc, currentSecondPointer/120.0f);
+		glUniform1f(currentMinutePointerLoc, currentMinutePointer / 120.0f);
+		glUniform1f(currentHourPointerLoc, currentHourPointer / 120.0f);
 
 		/* Render here */
 		glClear(GL_COLOR_BUFFER_BIT);
