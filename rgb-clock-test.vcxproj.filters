@@ -36,5 +36,8 @@
     <Text Include=".gitignore">
       <Filter>Source Files</Filter>
     </Text>
+    <Text Include="Tesssssxt.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
