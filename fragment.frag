@@ -40,6 +40,7 @@ void main(){
 
 	if(distance <= 0.4){
 		if((dotDetik) < sin(currentSecondPointer)) color = vec4(0.0, 0.0, 1.0, 1.0);
+		// cout << currentSecondPointer <<endl;
 
 		if(distance <= 0.3){  //size warna
 			if((dotDetik) <  sin(currentSecondPointer)) color = vec4(1.0, 1.0, 1.0, 1.0);

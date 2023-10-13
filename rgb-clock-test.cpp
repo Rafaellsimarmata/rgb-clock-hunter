@@ -10,16 +10,17 @@ float velocitySecondPointer = -6;
 float velocityMinutePointer = -0.1;
 float velocityHourPointer = -0.00417;
 
-float currentSecondPointer = 270.0f;
-float currentMinutePointer = 270.0f;
-float currentHourPointer = 270.0f;
+float currentSecondPointer = -188.4f;
+float currentMinutePointer = -188.4f;
+float currentHourPointer = -188.4f;
 
 float lastTime = 0.0f;
 float currentTime = 0.0f;
 float deltaTime = 0.0f;
 
-int main(void)
-{
+float speed = 1;
+
+int main(void){
 	GLFWwindow* window;
 
 	/* Initialize the library */
@@ -95,16 +96,16 @@ int main(void)
 	while (!glfwWindowShouldClose(window))
 	{
 		currentTime = glfwGetTime();
-		deltaTime = 1 * (currentTime - lastTime);
+		deltaTime = speed * (currentTime - lastTime);
 		lastTime = currentTime;
 
 		currentSecondPointer += deltaTime * velocitySecondPointer;
 		currentMinutePointer += deltaTime * velocityMinutePointer;
 		currentHourPointer += deltaTime * velocityHourPointer;
 
-		cout <<" currentSecondPointer" << currentSecondPointer << endl;
-		cout <<" currentMinutePointer" << currentMinutePointer << endl;
-		cout <<" currentHourPointer" << currentHourPointer << endl;
+		//cout <<" currentSecondPointer" << currentSecondPointer << endl;
+		//cout <<" currentMinutePointer" << currentMinutePointer << endl;
+		//cout <<" currentHourPointer" << currentHourPointer << endl;
 
 		glUniform1f(currentSecondPointerLoc, currentSecondPointer/120.0f);
 		glUniform1f(currentMinutePointerLoc, currentMinutePointer / 120.0f);
