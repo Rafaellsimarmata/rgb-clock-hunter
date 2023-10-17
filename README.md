@@ -19,5 +19,14 @@ for Computer Graphics Course.
 8. press the key 'J' to rewind 1 hour
 9. press the key 'X' To adjust the time on the clock.
 
+# Developers
+HUNTER Team
+
+1. Rafael Simarmata - https://github.com/Rafaellsimarmata
+2. Gavriel Ernesto - https://github.com/Gavriel-Sembiring-366
+3. Kevin Maverick - https://github.com/Agent-Healm
+4. M. Putra Harifin - https://github.com/putra-12345
+5. Ananda Kelvin Power - https://github.com/vinmora
+
 
 
