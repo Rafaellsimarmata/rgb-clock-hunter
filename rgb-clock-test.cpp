@@ -9,7 +9,7 @@ GLint color1Loc;
 GLint color2Loc;
 GLint color3Loc;
 
-float velocitySecondPointer = -6.0f /2;  // 360 derajat / 60 detik  
+float velocitySecondPointer = -6.0f / 2;  // 360 derajat / 60 detik  
 float velocityMinutePointer = -0.1f / 2; // 360 derajat / 3600 detik
 float velocityHourPointer = -0.00834f / 2; // 360 derajat / 86 400 detik * 2
 
@@ -31,6 +31,10 @@ void buttonFunction(GLFWwindow* window, int key, int scancode, int action, int m
 	if (key == GLFW_KEY_UP && action == GLFW_PRESS) {
 		speed *= 2;
 		cout << "key up pressed, speed = " << speed << endl;
+	}
+	if (key == GLFW_KEY_DOWN && action == GLFW_PRESS) {
+		speed /= 2;
+		cout << "key down pressed, speed = " << speed << endl;
 	}
 	if (key == GLFW_KEY_SPACE && action == GLFW_PRESS) {
 		speed = 1;
